@@ -36,11 +36,15 @@ public class Solution {
         String words [] = s.split("[^A-Za-z]+");
         int count = 0;
         for (String k: words){
-            count++;
+            if (!k.isEmpty()) {
+                count++;
+            }
         }
         System.out.println(count);
         for (String k: words){
-            System.out.println(k);
+            if (!k.isEmpty()) {
+                System.out.println(k);
+            }
         }
         //my code ends here
         scan.close();
